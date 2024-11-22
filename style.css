@@ -1,123 +1,168 @@
+/* Global Styles */
 body {
-    font-family: 'Georgia', serif;
     margin: 0;
-    padding: 0;
-    background-color: #fafafa;
-    color: #333;
+    font-family: 'Poppins', sans-serif;
+    background: #EDE8F5; /* Lightest Purple */
+    color: #4B4B4B;
   }
   
   .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  .header {
-    background-color: #faf5f0;
-    color: #333;
-    padding: 1rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ddd;
+    padding: 1rem 3rem;
   }
   
   .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 2.5rem;
+    color: #3D52A0; /* Darkest Blue */
   }
   
   .nav-links {
-    list-style: none;
     display: flex;
-    gap: 1.5rem;
+    list-style: none;
+    gap: 2rem;
   }
   
   .nav-links a {
     text-decoration: none;
-    color: #333;
+    color: #7091E6; /* Light Blue */
     font-weight: bold;
+    transition: color 0.3s;
   }
   
+  .nav-links a:hover {
+    color: #3D52A0; /* Darkest Blue */
+  }
+  
+  /* Hero Section */
   .hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #3D52A0, #8697C4); /* Blue Gradient */
+    color: white;
     text-align: center;
-    background-color: #fdf8f3;
-    padding: 4rem 0;
   }
   
-  .hero h1 {
-    font-size: 2.5rem;
+  .hero-content h2 {
+    font-size: 3rem;
     margin-bottom: 1rem;
   }
   
-  .hero p {
-    font-size: 1.2rem;
-    color: #666;
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
   }
   
+  .btn-explore {
+    padding: 0.8rem 2rem;
+    background: #7091E6; /* Light Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s;
+  }
+  
+  .btn-explore:hover {
+    background: #3D52A0; /* Darker Blue */
+  }
+  
+  /* About Section */
   .about {
-    background-color: #ffffff;
-    padding: 2rem 0;
+    text-align: center;
+    padding: 4rem 1rem;
+    background: #EDE8F5; /* Lightest Purple */
+    color: #4B4B4B;
   }
   
-  .about-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-  }
-  
-  .about img {
-    max-width: 50%;
-    border-radius: 10px;
-  }
-  
+  /* Menu Section */
   .menu {
-    padding: 2rem 0;
+    padding: 4rem 1rem;
+    text-align: center;
+    background: #ADBBDA; /* Lavender */
+  }
+  
+  .menu h2 {
+    font-size: 2.5rem;
+    color: #3D52A0;
+    margin-bottom: 2rem;
   }
   
   .menu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
   }
   
   .menu-item {
-    text-align: center;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
+    background: #EDE8F5;
     border-radius: 10px;
-    padding: 1rem;
+    overflow: hidden;
+    text-align: center;
+    color: #4B4B4B;
+    transition: transform 0.3s;
+  }
+  
+  .menu-item:hover {
+    transform: scale(1.05);
   }
   
   .menu-item img {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
   }
   
+  .menu-item p {
+    margin: 1rem 0;
+  }
+  
+  /* Contact Section */
   .contact {
-    background-color: #faf5f0;
-    padding: 2rem 0;
+    padding: 4rem 1rem;
     text-align: center;
+    background: #8697C4; /* Soft Purple */
+    color: white;
   }
   
   .contact form {
-    max-width: 500px;
+    max-width: 600px;
     margin: auto;
     display: grid;
     gap: 1rem;
   }
   
-  .contact-info p {
-    margin: 0.5rem 0;
+  .contact input,
+  .contact textarea {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
   }
   
+  .contact .btn-send {
+    padding: 0.8rem 2rem;
+    background: #3D52A0; /* Dark Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .contact .btn-send:hover {
+    background: #7091E6; /* Light Blue */
+  }
+  
+  /* Footer */
   .footer {
-    background-color: #faf5f0;
-    color: #333;
+    background: #3D52A0;
     text-align: center;
-    padding: 1rem 0;
-    border-top: 1px solid #ddd;
+    padding: 2rem 1rem;
+    color: white;
+    font-size: 0.9rem;
   }
   

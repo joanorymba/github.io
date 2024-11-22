@@ -10,10 +10,10 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="logo">Dashy Cakes</div>
+      <h1 class="logo">Dashy Cakes</h1>
       <nav>
         <ul class="nav-links">
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -22,76 +22,59 @@
   </header>
 
   <section id="hero" class="hero">
-    <div class="container">
-      <h1>Creating Space for Sweet Moments</h1>
-      <p>Delicious cakes and pastries made for every chapter of your life.</p>
+    <div class="hero-content">
+      <h2>Sweetness Redefined</h2>
+      <p>Indulge in premium cakes and pastries that elevate every celebration.</p>
+      <button class="btn-explore">Discover More</button>
     </div>
   </section>
 
   <section id="about" class="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <div class="about-content">
-        <p>
-          Dashy Cakes is a family-owned bakery in Lang'ata, Nairobi. We specialize in custom cakes and pastries for every occasion. Let us make your moments memorable.
-        </p>
-        <img src="./images/about-us.jpeg" alt="About Us">
-      </div>
-    </div>
+    <h2>About Dashy Cakes</h2>
+    <p>Dashy Cakes is a family-owned bakery based in Lang'ata, Nairobi. We specialize in crafting custom cakes and pastries for all occasions.</p>
   </section>
 
   <section id="menu" class="menu">
-    <div class="container">
-      <h2>Our Menu</h2>
-      <div class="menu-grid">
-        <div class="menu-item">
-          <img src="./images/chocolate-cake.jpeg" alt="Chocolate Cake">
-          <p>Chocolate Cake</p>
-          <p>KSh 1,500</p>
-        </div>
-        <div class="menu-item">
-          <img src="./images/vanilla-cake.jpeg" alt="Vanilla Cake">
-          <p>Vanilla Cake</p>
-          <p>KSh 1,200</p>
-        </div>
-        <div class="menu-item">
-          <img src="./images/red-velvet-cake.jpeg" alt="Red Velvet Cake">
-          <p>Red Velvet Cake</p>
-          <p>KSh 1,800</p>
-        </div>
-        <div class="menu-item">
-          <img src="./images/lemon-drizzle-cake.jpeg" alt="Lemon Drizzle Cake">
-          <p>Lemon Drizzle Cake</p>
-          <p>KSh 1,600</p>
-        </div>
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="./images/chocolate-cake.jpeg" alt="Chocolate Cake">
+        <p>Chocolate Cake</p>
+        <p>KSh 1,500</p>
+      </div>
+      <div class="menu-item">
+        <img src="./images/vanilla-cake.jpeg" alt="Vanilla Cake">
+        <p>Vanilla Cake</p>
+        <p>KSh 1,200</p>
+      </div>
+      <div class="menu-item">
+        <img src="./images/red-velvet-cake.jpeg" alt="Red Velvet Cake">
+        <p>Red Velvet Cake</p>
+        <p>KSh 1,800</p>
+      </div>
+      <div class="menu-item">
+        <img src="./images/lemon-drizzle-cake.jpeg" alt="Lemon Drizzle Cake">
+        <p>Lemon Drizzle Cake</p>
+        <p>KSh 1,600</p>
       </div>
     </div>
   </section>
 
   <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <form id="contact-form" onsubmit="return validateForm()">
-        <label for="name">Name:</label>
-        <input type="text" id="name" placeholder="Your Name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-      <div class="contact-info">
-        <p><strong>Phone:</strong> +254 712 345 678</p>
-        <p><strong>Email:</strong> info@dashycakes.co.ke</p>
-        <p><strong>Address:</strong> Lang'ata Road, Nairobi</p>
-      </div>
-    </div>
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button class="btn-send" type="submit">Send Message</button>
+    </form>
   </section>
 
   <footer class="footer">
-    <div class="container">
-      <p>© 2024 Dashy Cakes. All rights reserved.</p>
-    </div>
+    <p>© 2024 Dashy Cakes. All rights reserved.</p>
   </footer>
 </body>
 </html>
